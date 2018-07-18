@@ -28,3 +28,14 @@ Gtk-media-next-ltr.svg; License and author: https://commons.wikimedia.org/wiki/F
 Animation disc searchtool.svg; License and author: https://commons.wikimedia.org/wiki/File:Animation_disc_searchtool.svg
 Approved-151676.svg; License and author: https://commons.wikimedia.org/wiki/File:Approved-151676.svg
 Symbol support vote.png; License and author: https://commons.wikimedia.org/wiki/File:Symbol_support_vote.png
+
+Libs:
+EventSource4Net. Author, source, license:
+https://github.com/erizet/EventSource4Net
+Newtonsoft.Json. Author, source, license:
+https://raw.githubusercontent.com/JamesNK/Newtonsoft.Json/master/LICENSE.md
+slf4net. Author: Simon Baer; Tulpep; source, license:
+https://github.com/ef-labs/slf4net
+DotNetWikiBot Framework. Author, source, license:
+https://sourceforge.net/projects/dotnetwikibot/?source=navbar
+http://dotnetwikibot.sourceforge.net/
