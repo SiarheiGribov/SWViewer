@@ -25,7 +25,7 @@ namespace swViewer
         public bool check, checkUpd;
         public int countPast, countEls;
         public string useragent, customReason, rights, scriptUrl, pageTitle, newid, oldid, project, server_url, user, pageUrl, comment, page_namespace,
-            summary, diffLink, jsonDiff, fromTitle, fromUser, diff, diffSize, prediffEnd, preDiff, diffStart, diffEnd;
+            summary, jsonDiff, fromTitle, fromUser, diff, diffSize, prediffEnd, preDiff, diffStart, diffEnd;
         string[] wikis = { "afwiki", "alswiki", "amwiki", "anwiki", "angwiki", "arwikisource", "arwikiversity", "aswikisource", "astwiki", "avwiki", "azwiki", "bat_smgwiki", "bgwikibooks", "brwiki", "bswiki", "bswikiquote", "cawikiquote", "cswiktionary", "csbwiki", "csbwiktionary", "cywiki", "dawikisource", "dewikisource", "dinwiki", "diqwiki", "elwikiquote", "elwikisource", "enwikiversity", "eowikinews", "eowiki", "eowikisource", "eswiktionary", "etwikibooks", "fawikiquote", "fawikivoyage", "fiwikisource", "frwikinews", "frpwiki", "gawiki", "glwikibooks", "hewikibooks", "hewikiquote", "hrwikisource", "hrwiktionary", "htwiki", "huwikibooks", "huwikiquote", "huwiktionary", "hywiktionary", "iawiktionary", "idwikiquote", "iewiktionary", "iowiki", "iswiktionary", "jvwiki", "kawiki", "kkwiki", "kowikibooks", "kowikisource", "kuwiki", "kywiki", "lawiki", "lawikisource", "lawiktionary", "ladwiki", "lbwiki", "liwiki", "lmowiki", "ltgwiki", "lvwiki", "maiwiki", "map_bmswiki", "metawiki", "mgwiki", "mkwikibooks", "mlwiki", "mlwiktionary", "mrwikisource", "mrjwiki", "mswiktionary", "ndswiktionary", "nds_nlwiki", "newwiki", "nlwikisource", "nowikisource", "orwikisource", "pamwiki", "pdcwiki", "plwikinews", "plwikiquote", "pnbwiktionary", "pswiki", "rmywiki", "rowikinews", "ruewiki", "sawiki", "sawiktionary", "sdwiktionary", "siwiki", "skwiktionary", "sqwiki", "srwikisource", "stwiktionary", "stqwiki", "svwikibooks", "svwikinews", "svwikiversity", "tawikinews", "tawiki", "tewiki", "ttwiki", "tyvwiki", "ugwiki", "urwiki", "vepwiki", "vlswiki", "yiwiktionary", "zhwikiquote", "zh_classicalwiki", "zh_yuewiki", "abwiki", "adywiki", "afwiktionary", "angwiktionary", "arcwiki", "aywiki", "aywiktionary", "barwiki", "be_x_oldwiki", "biwiki", "bnwikisource", "bswikisource", "cawikibooks", "crwiki", "crhwiki", "cuwiki", "cvwiki", "dewikibooks", "dewiktionary", "dvwiki", "dvwiktionary", "eewiki", "eowikibooks", "eswikibooks", "eswikinews", "eswikiquote", "eswikisource", "eswikiversity", "euwikiquote", "fawiktionary", "fjwiki", "fowiktionary", "fywiki", "glwiktionary", "guwiki", "hewikisource", "hewiktionary", "hiwiktionary", "hsbwiki", "hsbwiktionary", "huwikisource", "hywikibooks", "iawiki", "idwikibooks", "iewiki", "jbowiki", "kawiktionary", "klwiki", "kmwikibooks", "kmwiktionary", "knwiki", "kuwikiquote", "kvwiki", "kywikibooks", "ltwikisource", "ltwiktionary", "lvwiktionary", "mediawikiwiki", "mznwiki", "nawiktionary", "nahwiktionary", "ndswiki", "newiki", "newiktionary", "nlwiktionary", "nnwikiquote", "nnwiktionary", "ocwiki", "outreachwiki", "pagwiki", "papwiki", "piwiki", "plwikibooks", "ptwikibooks", "ptwikinews", "ptwikiquote", "ptwikisource", "ptwikivoyage", "ptwiktionary", "quwiki", "rmwiki", "ruwikiquote", "ruwikisource", "rwwiki", "sawikisource", "sahwikisource", "scowiki", "skwikibooks", "skwiki", "skwikiquote", "slwikibooks", "slwiki", "snwiki", "sowiki", "specieswiki", "sqwikibooks", "sqwikiquote", "stwiki", "suwiktionary", "swwiktionary", "tawikiquote", "tawikisource", "tgwiki", "tgwiktionary", "thwikibooks", "thwikiquote", "thwikisource", "thwiktionary", "tkwiki", "tnwiki", "towiki", "tpiwiki", "twwiki", "tywiki", "udmwiki", "ukwikiquote", "uzwiki", "viwikibooks", "viwikisource", "vowiki", "vowiktionary", "wowiki", "xhwiki", "yiwikisource", "yowiki", "zh_min_nanwiki", "amwiktionary", "arwikinews", "arwiktionary", "astwiktionary", "bewikisource", "betawikiversity", "bmwiki", "bnwiki", "brwiktionary", "bswikibooks", "bswiktionary", "bxrwiki", "cawiktionary", "cswikinews", "cswikiquote", "cswikiversity", "dawikibooks", "dewikinews", "dewikiquote", "dtywiki", "enwikibooks", "enwikiquote", "etwiki", "etwikiquote", "euwikibooks", "extwiki", "fawikibooks", "ffwiki", "fiwikinews", "fiwiktionary", "fjwiktionary", "frwikibooks", "frwikiversity", "ganwiki", "gdwiki", "glwikiquote", "gnwiktionary", "gotwiki", "guwikisource", "gvwiki", "hewikinews", "hiwikibooks", "hiwiki", "hifwiki", "hrwiki", "iawikibooks", "idwikisource", "ikwiki", "incubatorwiki", "jamwiki", "kaawiki", "kabwiki", "kbdwiki", "kgwiki", "kiwiki", "knwikiquote", "kswiki", "kuwikibooks", "kuwiktionary", "kwwiki", "kywikiquote", "liwikisource", "ltwikibooks", "ltwikiquote", "mdfwiki", "mgwikibooks", "miwiki", "mlwikiquote", "mrwikibooks", "mrwikiquote", "mrwiktionary", "mtwiki", "myvwiki", "nlwikibooks", "nowikibooks", "nowiktionary", "novwiki", "nvwiki", "olowiki", "omwiki", "oswiki", "plwikisource", "plwikivoyage", "ptwikiversity", "quwiktionary", "rowikiquote", "rowikisource", "ruwikibooks", "ruwikimedia", "ruwikinews", "ruwiktionary", "sahwiki", "sewiki", "sgwiki", "slwiktionary", "sqwikinews", "srwikibooks", "srwikinews", "srnwiki", "sswiki", "suwiki", "svwikiquote", "svwikisource", "swwiki", "szlwiki", "tcywiki", "tewikisource", "tewiktionary", "thwiki", "tiwiki", "tlwiki", "ttwiktionary", "ukwikinews", "ukwiktionary", "urwikiquote", "sourceswiki", "wuuwiki", "xalwiki", "zhwikibooks", "acewiki", "afwikiquote", "anwiktionary", "arwikibooks", "azwikiquote", "azwiktionary", "bewiki", "bewiktionary", "bgwiki", "bgwikiquote", "bgwiktionary", "bjnwiki", "bpywiki", "brwikisource", "bswikinews", "bugwiki", "cdowiki", "chrwiki", "chywiki", "ckbwiki", "cswikibooks", "cswikisource", "dawiktionary", "dsbwiki", "elwikinews", "elwikiversity", "elwiktionary", "eowiktionary", "etwikisource", "etwiktionary", "fawikinews", "fiwikibooks", "fiwikiversity", "fiwikivoyage", "fiu_vrowiki", "fowiki", "fowikisource", "fywikibooks", "gagwiki", "glkwiki", "guwikiquote", "guwiktionary", "hawiki", "hywiki", "hywikiquote", "idwiktionary", "ilowiki", "iowiktionary", "iswiki", "jvwiktionary", "kawikibooks", "kkwikibooks", "kkwiktionary", "kmwiki", "kowikiversity", "koiwiki", "krcwiki", "kwwiktionary", "lezwiki", "lgwiki", "liwikibooks", "liwiktionary", "lnwiktionary", "mhrwiki", "mnwiki", "mnwiktionary", "mswikibooks", "mwlwiki", "newikibooks", "nlwikiquote", "nowikiquote", "nsowiki", "nycwikimedia", "orwiktionary", "pawikibooks", "pawikisource", "pflwiki", "pihwiki", "plwiktionary", "pnbwiki", "pntwiki", "pswiktionary", "rowiktionary", "ruwikiversity", "rwwiktionary", "sawikibooks", "sawikiquote", "sdwiki", "siwikibooks", "siwiktionary", "slwikiquote", "slwikiversity", "specieswiki", "srwiktionary", "suwikiquote", "svwiktionary", "tawikibooks", "tewikiquote", "tgwikibooks", "trwikibooks", "trwikimedia", "trwikinews", "trwikiquote", "trwikisource", "trwiktionary", "tswiki", "ukwikibooks", "uzwikiquote", "vewiki", "vecwiktionary", "viwikiquote", "viwiktionary", "wawiki", "xmfwiki", "yiwiki", "zeawiki", "zhwikinews", "zhwikisource", "zh_min_nanwiktionary", "afwikibooks", "akwiki", "arwikiquote", "arzwiki", "aswiki", "azwikibooks", "azwikisource", "bawiki", "bclwiki", "bewikibooks", "bewikiquote", "bgwikinews", "bgwikisource", "bhwiki", "bnwikibooks", "bnwiktionary", "bowiki", "brwikiquote", "cawikinews", "cawikisource", "cbk_zamwiki", "cewiki", "chwiki", "chrwiktionary", "cowiki", "cvwikibooks", "cywikibooks", "cywikiquote", "cywikisource", "cywiktionary", "dawikiquote", "dewikiversity", "dkwikimedia", "dzwiki", "elwikibooks", "eowikiquote", "euwiki", "euwiktionary", "fawikisource", "fiwikiquote", "frwikiquote", "frrwiki", "fywiktionary", "gawiktionary", "gdwiktionary", "glwiki", "glwikisource", "gnwiki", "gvwiktionary", "hawiktionary", "hakwiki", "hawwiki", "hiwikiquote", "hrwikibooks", "hrwikiquote", "hywikisource", "igwiki", "iswikibooks", "iswikiquote", "iswikisource", "iuwiki", "iuwiktionary", "jbowiktionary", "kawikiquote", "klwiktionary", "knwikisource", "knwiktionary", "kowikinews", "kowikiquote", "kowiktionary", "kswiktionary", "kshwiki", "kywiktionary", "lawikibooks", "lawikiquote", "lbwiktionary", "lbewiki", "liwikiquote", "lnwiki", "lowiki", "lowiktionary", "ltwiki", "miwiktionary", "minwiki", "mkwikisource", "mkwiktionary", "mlwikibooks", "mlwikisource", "mswiki", "mtwiktionary", "mywiki", "mywiktionary", "nawiki", "nahwiki", "nlwikimedia", "nowikinews", "nrmwiki", "nywiki", "ocwikibooks", "ocwiktionary", "omwiktionary", "orwiki", "pawiki", "pawiktionary", "pcdwiki", "plwikimedia", "rnwiki", "rowikibooks", "roa_rupwiki", "roa_rupwiktionary", "sgwiktionary", "shwiktionary", "skwikisource", "slwikisource", "smwiki", "smwiktionary", "sowiktionary", "sqwiktionary", "srwikiquote", "sswiktionary", "tawiktionary", "tewikibooks", "tetwiki", "tiwiktionary", "tkwiktionary", "tlwikibooks", "tlwiktionary", "tnwiktionary", "tpiwiktionary", "tswiktionary", "ttwikibooks", "tumwiki", "uawikimedia", "ugwiktionary", "ukwikisource", "urwikibooks", "urwiktionary", "uzwiktionary", "wawiktionary", "wowikiquote", "wowiktionary", "zawiki", "zh_min_nanwikisource", "zuwiki", "zuwiktionary", "arwikimedia", "bdwikimedia", "bewikimedia", "brwikimedia", "cawikimedia", "cowikimedia", "etwikimedia", "fiwikimedia", "mkwikimedia", "mxwikimedia", "nowikimedia", "sewikimedia", "testwikidatawiki", "wikimania2018wiki" };
         string[] namespaces = { "Main", "Talk", "User", "User talk", "Project", "Project talk", "File", "File talk", "MediaWiki", "MediaWiki talk", "Template", "Template talk", "Help", "Help talk", "Category", "Category talk" };
 
@@ -218,6 +218,7 @@ namespace swViewer
                         {
                             // Фильтры
                             var userInfo = new WebClient();
+                            userInfo.Encoding = System.Text.Encoding.UTF8;
                             userInfo.Headers.Add(useragent);
                             var info = userInfo.DownloadString(stuff.server_url.ToString() + stuff.server_script_path.ToString() + "/api.php?action=query&list=users&ususers=" + diffuser + "&usprop=groups|registration|editcount&utf8&format=json");
                             stuff = JObject.Parse(info);
@@ -281,6 +282,7 @@ namespace swViewer
             try
             {
                 var userInfo = new WebClient();
+                userInfo.Encoding = System.Text.Encoding.UTF8;
                 userInfo.Headers.Add("user-agent: [[:meta: user:Iluvatar/SWViewer]]; Login as: " + loginWikiText.Text.ToString());
                 var globalUsers = userInfo.DownloadString("http://meta.wikimedia.org/w/api.php?action=query&format=json&list=globalallusers&utf8=1&formatversion=2&agugroup=global-bot|staff|steward|global-sysop|global-rollbacker|abusefilter-helper|founder|ombudsman|global-interface-editor&&aguprop=groups&agulimit=500");
                 dynamic stuff = JObject.Parse(globalUsers);
@@ -331,6 +333,8 @@ namespace swViewer
             webBrowser.Visibility = Visibility.Visible;
             sPanel1.Visibility = Visibility.Hidden;
             clearMenu.IsEnabled = true;
+
+            (webBrowser.Child as System.Windows.Forms.WebBrowser).Navigate("https://my.wikipedia.org");
 
             BackgroundWorker1.RunWorkerAsync();
         }
@@ -399,18 +403,23 @@ namespace swViewer
             try
             {
                 var w = new WebClient();
+                w.Encoding = System.Text.Encoding.UTF8;
                 w.Headers.Add(useragent);
-                string revisions = w.DownloadString(scriptUrl + "/api.php?action=query&prop=revisions&titles=" + pageTitle + "&rvprop=ids&format=json&utf8=1");
+                string revisions = w.DownloadString(scriptUrl + "/api.php?action=query&prop=revisions&titles=" + pageTitle + "&rvprop=ids|user|comment&rvlimit=1&format=json&utf8=1");
                 dynamic stuff = JObject.Parse(revisions);
                 string r = stuff["query"]["pages"].ToString();
 
-                Match match = Regex.Match(r, @"""revisions"":\s*?\[\s*?\{\s*?""revid"":\s *?(\d*?),", RegexOptions.IgnoreCase);
-                string lastRev = match.Groups[1].Value;
+                Match matchid = Regex.Match(r, @"""revisions"":\s*?\[\s*?\{\s*?""revid"":\s *?(\d*?),", RegexOptions.IgnoreCase);
+                string lastRev = matchid.Groups[1].Value;
 
                 if (newid != lastRev)
                 {
                     oldid = newid;
                     newid = lastRev;
+                    Match match = Regex.Match(r, @"""user"":\s*?""(.*?)""", RegexOptions.IgnoreCase);
+                    user = match.Groups[1].Value.ToString();
+                    match = Regex.Match(r, @"""comment"":\s*?""(.*?)""\s*?\}\s*?\]", RegexOptions.IgnoreCase);
+                    comment = match.Groups[1].Value.ToString();
                     Queue.IsEnabled = false;
                     webBrowser.IsEnabled = false;
                     MessageBox.Show("This revision is not last. Loading new revision...");
@@ -442,10 +451,10 @@ namespace swViewer
                     string rollbacktoken = token["query"]["tokens"]["rollbacktoken"];                 
 
                     if (customReason != "" && customReason != null) {
-                        summary = "Reverted edits by [[User:" + user + "|" + user + "]] using [[metawiki:User:Iluvatar/SW-Viewer|SW-Viewer]]. " + customReason.ToString();
+                        summary = "Reverted edits by [[User:" + user + "|" + user + "]] using [[metawiki:User:Iluvatar/SWViewer|SWViewer]]. " + customReason.ToString();
                         customReason = "";
                     } else
-                        summary = "Reverted edits by [[User:" + user + "|" + user + "]] using [[metawiki:User:Iluvatar/SW-Viewer|SW-Viewer]]";
+                        summary = "Reverted edits by [[User:" + user + "|" + user + "]] using [[metawiki:User:Iluvatar/SWViewer|SWViewer]]";
                     JObject rollback = JObject.Parse(wiki.PostDataAndGetResult("/w/api.php?action=rollback&format=json", "title=" + pageTitle + "&user=" + user + "&summary=" + summary + "&token=" + Uri.EscapeDataString(rollbacktoken)));
                     if (rollback["error"]?["code"]?.ToString() != null)
                     {
@@ -455,6 +464,7 @@ namespace swViewer
                         if (rollback["error"]["code"].ToString() == "alreadyrolled")
                         {
                             var w2 = new WebClient();
+                            w2.Encoding = System.Text.Encoding.UTF8;
                             w2.Headers.Add(useragent);
                             string revisions = w2.DownloadString(scriptUrl + "/api.php?action=query&prop=revisions&titles=" + pageTitle + "&rvprop=ids&format=json&utf8=1");
                             dynamic stuff = JObject.Parse(revisions);
@@ -491,7 +501,7 @@ namespace swViewer
                 catch (DotNetWikiBot.WikiBotException)
                 {
                     MessageBox.Show("Page is not found or internal error of app");
-                    (webBrowser.Child as System.Windows.Forms.WebBrowser).Navigate(diffLink);
+                    (webBrowser.Child as System.Windows.Forms.WebBrowser).Navigate(pageUrl + "&uselang=en");
                 }
                 catch (WebException)
                 {
@@ -519,7 +529,7 @@ namespace swViewer
             buttonRevert.IsEnabled = false;
             buttonRevertCustom.IsEnabled = false;
             if (diffOld == null || diffOld == "")
-                (webBrowser.Child as System.Windows.Forms.WebBrowser).Navigate(pageUrl);
+                (webBrowser.Child as System.Windows.Forms.WebBrowser).Navigate(pageUrl + "?uselang=en");
             else
             {
                 string urlAPI = diffscriptUrl + "/api.php?action=compare&format=json&fromrev=" + diffOld + "&torev=" + diffNew + "&tocontentformat=text%2Fcss&tocontentmodel=text&prop=diff|size|title|user|ids";
@@ -564,14 +574,15 @@ namespace swViewer
                     else
                         diffSize = "<font color='Red'>" + rw.ToString() + "</font>";
                 }
+                string pns = "";
                 if (page_namespace != "")
-                    page_namespace = "; NS: " + page_namespace;
+                    pns = "; NS: " + page_namespace;
                 if (comment == null)
                     prediffEnd = "</font><br><hr style='margin-bottom:1px; margin-top:1px'>";
                 else
                     prediffEnd = "<br><p style='text-align:center; display:inline;'>Section and comment: " + comment + "</p></font><br><hr style='margin-bottom:1px; margin-top:1px'>";
                 preDiff =
-"<i><font size='2' face='verdana'><p style='text-align:left; display:inline;'><span style='float:left;'>" + projectName + page_namespace + "</span><span style='float:right;'>" + projectName + page_namespace + "</span></p></font></i><br>" +
+"<i><font size='2' face='verdana'><p style='text-align:left; display:inline;'><span style='float:left;'>" + projectName + pns + "</span><span style='float:right;'>" + projectName + pns + "</span></p></font></i><br>" +
 "<b><font size='5'><p style='text-align:left; display:inline;'><span style='float:left;'>" + fromTitle + "</span><span style='float:right;'>" + diffTitle + "</span></p></font></b><br><br>" +
 "<font size='3'><p style='text-align:left; display:inline;'><span style='float:left;'><a href='" + serv_url + "/w/index.php?oldid=" + diffOld + "'>" + diffOld + "</a></span><span style='float:right;'>(" + diffSize + ")&nbsp;&nbsp;<a href='" + serv_url + "/w/index.php?oldid=" + diffNew + "'>" + diffNew + "</a></span></p><br>" +
 "<p style='text-align:left; display:inline;'><span style='float:left;'><a href='" + serv_url + "/wiki/User:" + fromUser + "'>" + fromUser + "</a></span><span style='float:right;'><a href='" + serv_url + "/wiki/User:" + diffUser + "'>" + diffUser + "</a></span></p>";
@@ -595,11 +606,11 @@ namespace swViewer
         private void openBrowser_Click(object sender, RoutedEventArgs e)
         {
             if (oldid == null || oldid == "")
-                Process.Start(pageUrl);
+                Process.Start(pageUrl + "?uselang=en");
             else
             {
                 if (newid != null || newid == "")
-                    Process.Start(scriptUrl + "/index.php?diff=" + newid + "&oldid=" + oldid);
+                    Process.Start(scriptUrl + "/index.php?diff=" + newid + "&oldid=" + oldid + "&uselang=en");
             }
         }
         private void help_Click(object sender, RoutedEventArgs e)

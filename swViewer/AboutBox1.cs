@@ -88,7 +88,7 @@ namespace swViewer
 
         private void linkLabelLicense_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/SiarheiGribov/SW-Viewer/blob/master/LICENSE");
+            System.Diagnostics.Process.Start("https://github.com/SiarheiGribov/SWViewer/blob/master/LICENSE");
         }
 
     }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:swViewer"
         xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         mc:Ignorable="d"
-    Title="SW-Viewer" MinWidth="838" MinHeight="619" Height="568.5" Width="838" WindowStartupLocation="CenterScreen" Icon="pack://application:,,,/Resources/image/Erioll_world_2.bmp">
+    Title="SWViewer" MinWidth="838" MinHeight="619" Height="568.5" Width="838" WindowStartupLocation="CenterScreen" Icon="pack://application:,,,/Resources/image/Erioll_world_2.bmp">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
